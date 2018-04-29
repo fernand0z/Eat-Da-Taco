@@ -22,7 +22,7 @@ var taco = {
         });
     },
     delete: function (condition, cb) {
-        orm.delete("cats", condition, function (res) {
+        orm.delete("tacos", condition, function (res) {
             cb(res);
         });
     }
