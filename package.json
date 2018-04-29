@@ -1,0 +1,25 @@
+{
+  "name": "Eat-Da-Taco",
+  "version": "1.0.0",
+  "description": "App to enter the tacos you wanna eat.  Uses MySQL, Node, Express, and Handlebars with MVC design and ORM.",
+  "main": "jserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernand0z/Eat-Da-Taco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernand0z/Eat-Da-Taco/issues"
+  },
+  "homepage": "https://github.com/fernand0z/Eat-Da-Taco#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0"
+  }
+}
