@@ -18,6 +18,7 @@ router.get("/", function (req, res) {
         };
         //!!!!!REMOVE AFTER DEBUGGING
         console.log('Handlebars Object: ' + hbsObject);
+        console.log(hbsObject.tacos);
         res.render("index", hbsObject);
     });
 });
@@ -36,11 +37,11 @@ router.post("/api/tacos", function (req, res) {
 
 //Process PUT request to change taco eaten status
 router.put("/api/tacos/:id", function (req, res) {
-    var condition = "id = " + req.params.id;
+    var condition =  req.params.id;
 
     console.log("condition: ", condition);
 
-    taco_order.update({
+    tacoModel.update({
         eaten: req.body.eaten
     }, condition, function (result) {
         if (result.changedRows == 0) {

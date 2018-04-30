@@ -6,7 +6,7 @@ $(function () {
     //Event handler for clicking on the .change-eaten button class
     $(".change-eaten").on("click", function (event) {
         var id = $(this).data("id");
-        var newEaten = $(this).data("newEaten");
+        var newEaten = $(this).data("neweaten");
 
         var newEatenState = {
             eaten: newEaten
@@ -48,19 +48,20 @@ $(function () {
             }
         );
     });
+    // ADD MAYBE
     //Event listener for click on delete taco 
-    $(".delete-taco").on("click", function (event) {
-        var id = $(this).data("id");
+    // $(".delete-taco").on("click", function (event) {
+    //     var id = $(this).data("id");
 
-        // Send the DELETE request.
-        $.ajax("/api/tacos/" + id, {
-            type: "DELETE"
-        }).then(
-            function () {
-                console.log("Deleted taco: ", id);
-                // Reload the page to get the updated list
-                location.reload();
-            }
-        );
-    });
+    //     // Send the DELETE request.
+    //     $.ajax("/api/tacos/" + id, {
+    //         type: "DELETE"
+    //     }).then(
+    //         function () {
+    //             console.log("Deleted taco: ", id);
+    //             // Reload the page to get the updated list
+    //             location.reload();
+    //         }
+    //     );
+    // });
 });

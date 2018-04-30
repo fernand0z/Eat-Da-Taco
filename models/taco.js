@@ -21,11 +21,12 @@ var taco = {
             cb(res);
         });
     },
-    delete: function (condition, cb) {
-        orm.delete("tacos", condition, function (res) {
-            cb(res);
-        });
-    }
+    //  ADD MAYBE
+    // delete: function (condition, cb) {
+    //     orm.delete("tacos", condition, function (res) {
+    //         cb(res);
+    //     });
+    // }
 };
 
 // Export the database functions for the controller TacosController.js).

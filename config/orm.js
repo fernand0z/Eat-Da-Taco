@@ -76,8 +76,8 @@ var orm = {
         var queryString = "UPDATE " + table;
 
         queryString += " SET ";
-        queryString += objToSql(objColVals);
-        queryString += " WHERE ";
+        queryString += "eaten = true "
+        queryString += " WHERE id= ";
         queryString += condition;  //True or false for whether taco has been eaten 
 
         //!!!!!!REMOVE AFTER DEBUGGING
@@ -89,18 +89,20 @@ var orm = {
             cb(result);
         });
     },
-    delete: function (table, condition, cb) {
-        var queryString = "DELETE FROM " + table;
-        queryString += " WHERE ";
-        queryString += condition;
 
-        connection.query(queryString, function (err, result) {
-            if (err) {
-                throw err;
-            }
-            cb(result);
-        });
-    }
+    //  INCLUDE
+    // delete: function (table, condition, cb) {
+    //     var queryString = "DELETE FROM " + table;
+    //     queryString += " WHERE ";
+    //     queryString += condition;
+
+    //     connection.query(queryString, function (err, result) {
+    //         if (err) {
+    //             throw err;
+    //         }
+    //         cb(result);
+    //     });
+    // }
 };
 
 // Export the orm object for the model (taco.js).

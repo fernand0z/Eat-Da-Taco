@@ -15,3 +15,4 @@ CREATE TABLE tacos
 ### Some initial data entries for testing
 INSERT INTO tacos (taco_order) VALUES ('Thai Chicken Taco');
 INSERT INTO tacos (taco_order) VALUES ('Blackened Chicken Taco');
+INSERT INTO tacos (taco_order) VALUES ('Citrus Veggie Taco');

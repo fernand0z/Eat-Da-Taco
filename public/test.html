@@ -1,4 +1,23 @@
-  <div class="jumbotron">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Eat Da Tacos!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="tacos.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+<!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
         <h1 id="main-heading">Tacos...are...delicious</h1>
     </div>
 
@@ -11,11 +30,11 @@
             <div class="col-md-12" id='uneaten'>
                 <h3>Tacos Ready to be Devoured!: </h3>
                 <ul id='list-list'>
-                    {{#each tacos}} 
-                        {{!-- {{#unless eaten}} --}}
+                    {{#each taco_order}} 
+                        {{#unless eaten}}
                             <!-- Renders the Devour button and sets the eaten value to true on click -->
                             {{> tacos/taco-block eaten=true}}
-                        {{!-- {{/unless}} --}}
+                        {{/unless}}
                     {{/each}}
                 </ul>
             </div>
@@ -24,7 +43,7 @@
             <div class="col-md-12" id='eaten'>
                 <h3>Tacos you've Eaten: </h3>
                 <ul id='eaten-list'>
-                    {{#each tacos}} 
+                    {{#each taco_order}} 
                         {{#if eaten}}
                         {{/if}}
                     {{/each}}
@@ -67,44 +86,6 @@
         <button type="submit">Add your new Taco!</button>
     </form>
 
+</body>
 
-
-
-{{!-- <h1>Cats!</h1>
-
-<h2>Cats that are not sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Cats that are sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Cat</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
-  </div>
-
-  <div class="form-group">
-    <label for="sleepy">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
-
-  <button type="submit">Add Cat</button>
-</form> --}}
+</html>
