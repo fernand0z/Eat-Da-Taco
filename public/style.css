@@ -17,6 +17,7 @@ body {
 
 #main-heading {
     font-size: 90px;
+    margin-top: -1%;
 }
 
 #heading2 {
@@ -71,7 +72,7 @@ body {
 }
 
 #eaten {
-    background: linear-gradient(45deg,rgba(1, 20, 40, 0.9) 20%, rgba(8, 80, 120, 0.8) 75%);
+    background: linear-gradient(45deg,rgba(1, 20, 40, 0.9) 20%, rgba(8, 80, 120, 0.7) 75%);
 }
 
 .add-heading {
@@ -79,7 +80,7 @@ body {
 }
 
 #new-section {
-    background: linear-gradient(45deg,rgba(199, 0, 156, 0.8) 20%, rgba(1, 20, 40, 0.8) 75%);
+    background: linear-gradient(rgba(88, 0, 72, 0.80) 60%, rgb(255, 42, 209, 0.7));
     padding: 1%;
     text-align: center;
     width: 40%;
@@ -108,7 +109,6 @@ body {
     padding-right: 5%;
     background: linear-gradient(rgba(233, 105, 1, 0.9) 30%, rgba(255, 214, 137, 0.8));
     color: white;
-    font-weight: bold;
     font-family: 'Roboto', sans-serif;
     /* box-shadow: inset 0 0 0 0px white !important; */
     font-size: 16px;
