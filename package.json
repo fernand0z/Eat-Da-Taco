@@ -2,7 +2,7 @@
   "name": "Eat-Da-Taco",
   "version": "1.0.0",
   "description": "App to enter the tacos you wanna eat.  Uses MySQL, Node, Express, and Handlebars with MVC design and ORM.",
-  "main": "jserver.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
