@@ -4,13 +4,15 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
 
-let connection = mysql.createConnection({
-    port: 3306,
-    host: "localhost",
-    user: "root",
-    password: "root",
-    database: "tacos_db"
-});
+// let connection = mysql.createConnection({
+//     port: 3306,
+//     host: "localhost",
+//     user: "root",
+//     password: "root",
+//     database: "tacos_db"
+// });
+
+connection = mysql.createConnection(process.env.JAWSDB_URL);
 // Make connection.
 connection.connect(function (err) {
     if (err) {
