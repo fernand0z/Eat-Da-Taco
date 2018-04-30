@@ -4,7 +4,7 @@
   "description": "App to enter the tacos you wanna eat.  Uses MySQL, Node, Express, and Handlebars with MVC design and ORM.",
   "main": "jserver.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
