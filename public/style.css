@@ -3,6 +3,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -19,6 +21,14 @@ body {
 
 #heading2 {
     margin-top: -1%;
+}
+#devour-btm {
+    background: white;
+}
+
+.btn-success {
+    background-color:rgb(185, 1, 185);
+    font-weight: bold;
 }
 
 #uneaten {
@@ -56,8 +66,12 @@ body {
     margin-bottom: 5%;
 }
 
-.col-md-12 {
-    background: linear-gradient(45deg,rgba(8, 80, 120, .8) 20%, rgba(1, 20, 40, 0.8) 75%);
+#uneaten {
+    background: linear-gradient(45deg,rgba(8, 80, 120, 0.8) 20%, rgba(1, 20, 40, 0.8) 75%);
+}
+
+#eaten {
+    background: linear-gradient(45deg,rgba(1, 20, 40, 0.9) 20%, rgba(8, 80, 120, 0.8) 75%);
 }
 
 .add-heading {
@@ -75,4 +89,27 @@ body {
 
 #both-columns {
     padding: 1%;
+}
+
+
+#image-btm {
+    text-align: center;
+    margin-top: 3%;
+}
+
+#dotd {
+    height: 200px;
+    margin-bottom: 3%;
+}
+
+.hvr-grow-shadow {
+    padding: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: linear-gradient(rgba(233, 105, 1, 0.9) 30%, rgba(255, 214, 137, 0.8));
+    color: white;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    /* box-shadow: inset 0 0 0 0px white !important; */
+    font-size: 16px;
 }
