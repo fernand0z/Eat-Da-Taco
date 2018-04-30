@@ -31,7 +31,7 @@ $(function () {
         event.preventDefault();
 
         var newTaco = {
-            name: $("#taco-name").val().trim(),
+            taco_order: $("#taco-name").val().trim(),
             eaten: false  //Initialized as false
         };
 

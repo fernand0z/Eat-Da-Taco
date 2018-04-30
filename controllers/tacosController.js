@@ -26,9 +26,9 @@ router.get("/", function (req, res) {
 //Process POST request to create new taco entry in DB
 router.post("/api/tacos", function (req, res) {
     tacoModel.create([
-        "name", "false"  //False for eaten to be uneaten
+        "taco_order", "eaten"  //False for eaten to be uneaten
     ], [
-            req.body.name, req.body.eaten
+            req.body.taco_order, false
         ], function (result) {
             // Send back the ID of the new quote
             res.json({ id: result.insertId });
