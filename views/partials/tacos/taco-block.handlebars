@@ -1,8 +1,12 @@
-<li>
+<div class='input-group ready-divs'>
+<li class='form-control'>
 	{{taco_order}}
-		<button class="change-eaten" id='devour-btn' data-id="{{this.id}}" data-newEaten="{{eaten}}">
+</li>
+		<span class='input-group-btn'>
+		<button class="btn btn-success change-eaten" id='devour-btn' data-id="{{this.id}}" data-newEaten="{{eaten}}">
 		Devour this Taco
 	</button>
+	</span>
 	{{!-- Add later, maybe --}}
 	{{!-- <button class="delete-cat" data-id="{{this.id}}">DELETE!</button> --}}
-</li>
+</div>

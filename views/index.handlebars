@@ -1,5 +1,6 @@
   <div class="jumbotron">
-        <h1 id="main-heading">Tacos...are...delicious</h1>
+        <h1 id="main-heading">TACOS</h1>
+        <h3 id='heading2'>ARE DELICIOUS</h3>
     </div>
 
     <!-- TACO LIST SECTION -->
@@ -9,7 +10,8 @@
     <div class="row" id='both-columns'>
         <div class="col-md-6">
             <div class="col-md-12" id='uneaten'>
-                <h3>Tacos Ready to be Devoured!: </h3>
+                <h3 id='ready-heading'>Tacos Ready to be Devoured!: </h3>
+                <div class='ready-items'>
                 <ul id='list-list'>
                     {{#each tacos}} 
                         {{#unless eaten}}
@@ -18,11 +20,13 @@
                         {{/unless}}
                     {{/each}}
                 </ul>
+                </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="col-md-12" id='eaten'>
-                <h3>Tacos you've Eaten: </h3>
+                <h3 id='eaten-heading'>Tacos you've Eaten: </h3>
+                <div class='eaten-items'>
                 <ul id='eaten-list'>
                     {{#each tacos}} 
                         {{#if eaten}}
@@ -30,23 +34,24 @@
                         {{/if}}
                     {{/each}}
                 </ul>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- ADDING NEW TACOS SECTION -->
     <!-- ======================================================== -->
-
-    <h2>Add a taco you'd like to eat!</h2>
+    <div id="new-section">
+    <h2 class='add-heading'>Add a taco you'd like to eat!</h2>
     <form class="create-form">
 
         <div class="form-group">
-            <label for="taco-name">Taco:</label>
+            <label for="taco-name"></label>
             <input type="text" id="taco-name" name="Taco Type">
         </div>
 
         <button type="submit">Add your new Taco!</button>
     </form>
-
+    </div>
 
 
