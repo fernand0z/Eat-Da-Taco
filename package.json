@@ -2,7 +2,7 @@
   "name": "Eat-Da-Taco",
   "version": "1.0.0",
   "description": "App to enter the tacos you wanna eat.  Uses MySQL, Node, Express, and Handlebars with MVC design and ORM.",
-  "main": "server.js",
+  "main": "jserver.js",
   "scripts": {
     "start": "node server.js"
   },
